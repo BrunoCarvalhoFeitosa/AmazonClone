@@ -27,7 +27,9 @@ const ProductShelf = ({ products }) => {
             />
           ))}
       </div>
-      <div className='w-[100%]'><Categories /></div>
+      <div className='w-[100%]'>
+        <Categories />
+      </div>
       <div className='w-[100%] lg:mb-[62px]'>
         <div className='grid grid-flow-row-dense md:grid-cols-2 lg:grid-cols-3 w-[97%] mx-auto'>
             {products

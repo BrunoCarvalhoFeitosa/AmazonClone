@@ -16,9 +16,11 @@ module.exports = {
           white: "#fff",
         },
         amazon_yellow: "#fbbf24",
+        bold_yellow: "#DEB887",
         blue_light: "#232F3E",
         blue_medium: "#37475A",
         gray_medium: "#ccc",
+        purple: "#FF1493"
       },
     },
   },

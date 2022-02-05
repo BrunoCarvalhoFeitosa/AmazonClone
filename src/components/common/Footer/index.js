@@ -1,7 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import { signIn, signOut, useSession } from 'next-auth/react';
 
 const Footer = () => {
+  const { data: session } = useSession();
+
   const handleScrollTop = () => {
     window[`scrollTo`]({ top: 0, behavior: `smooth` });
   };
@@ -11,8 +14,13 @@ const Footer = () => {
         <div className='w-[100%] py-8 bg-white'>
           <div className='flex flex-col justify-center items-center'>
             <h5 className='text-[15px]'>See personalized recommendations</h5>
-            <button className='button my-2 w-[250px] rounded-md border border-yellow-500 font-semibold'>Sign in</button>
-            <h5 className='text-[12px]'>
+            <button 
+              onClick={signIn}
+              className='button my-2 w-[250px] rounded-md border border-yellow-500 font-semibold'
+            >
+              Sign in
+            </button>
+            <h5 className='text-[15px]'>
               New customer?
               <Link href='/'>
                 <span className='ml-[4px] text-blue-500 cursor-pointer'>Start here.</span>

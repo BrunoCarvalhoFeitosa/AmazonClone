@@ -1,7 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 import { signIn, signOut, useSession } from 'next-auth/react';
+import { selectItems } from '../../../slices/basketSlice';
 import {
   MenuIcon,
   SearchIcon,
@@ -9,6 +11,9 @@ import {
 } from '@heroicons/react/outline';
 
 const Header = () => {
+  const { data: session } = useSession();
+  const items = useSelector(selectItems);
+
   return (
     <header>
       <div className='flex items-center justify-between bg-amazon_blue py-[10px] px-[16px]'>
@@ -28,22 +33,40 @@ const Header = () => {
           </div>
           <div className='hidden md:flex items-center h-10 rounded-md flex-grow bg-yellow-400 hover:bg-yellow-500 cursor-pointer'>
             <input type='text' className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none' />
-            <SearchIcon className='h-12 p-4' />
+            <SearchIcon className='h-14 p-4' />
           </div>
         </div>
         <div className='flex justify-end ml-4 items-center text-amazon_primary-white'>
-          <div className='flex flex-col mr-5 text-center' onClick={() => signIn()}>
-            <p className='text-[11px] md:text-[14px] h-[14px]'>Hello, Bruno Carvalho</p>
-            <strong className='text-[15px] font-extrabold cursor-pointer'>Account & Lists</strong>
+        <div className='flex flex-col mr-5 text-center'>
+          {session ? (
+            <img
+              src={session.user?.image}
+              alt={session.user?.name}
+              title={session.user?.name}
+              className='w-10 h-10 rounded-full'
+            />
+          ) : (
+            null
+          )}
+        </div>
+          <div className='flex flex-col mr-5 text-center' onClick={!session ? signIn : signOut}>
+            <p className='text-[11px] md:text-[14px] h-[15px]'>
+              {session ? `Hey, ${session.user?.name.split(' ')[0]}` : 'Sign In'}
+            </p>
+            <strong className='text-[13px] md:text-[15px] font-extrabold cursor-pointer'>Account & Lists</strong>
           </div>
           <div className='flex flex-col mr-5 text-center'>
-            <p className='text-[11px] md:text-[14px] h-[14px] cursor-pointer'>Returns</p>
-            <strong className='text-[15px] font-extrabold cursor-pointer'>& Orders</strong>
+            <p className='text-[11px] md:text-[14px] h-[15px] cursor-pointer'>Returns</p>
+            <strong className='text-[13px] md:text-[15px] font-extrabold cursor-pointer'>& Orders</strong>
           </div>
           <div className='flex justify-center items-center'>
-            <ShoppingCartIcon className='h-8 cursor-pointer' />
+            <Link href="/checkout">
+              <ShoppingCartIcon className='h-8 cursor-pointer' />
+            </Link>
             <div className='flex flex-col justify-center items-center font-extrabold w-4 h-4'>
-              <div className='relative flex justify-center items-center rounded-full top-[-10px] right-[5px] text-[12px] text-amazon_blue w-[20px] h-[20px] bg-yellow-400'>0</div>
+              <div className='relative flex justify-center items-center rounded-full top-[-10px] right-[5px] text-[12px] text-amazon_blue w-[20px] h-[20px] bg-yellow-400'>
+                {items.length}
+              </div>
             </div>
           </div>
         </div>
