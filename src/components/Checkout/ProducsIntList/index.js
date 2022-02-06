@@ -74,8 +74,8 @@ const ProductsInList = ({
                 </div>
             </div>
             <div className='flex flex-col space-y-2 my-auto justify-self-end'>
-                <button onClick={addItemToBasket} className='button mt-auto'>Add to basket</button>
-                <button onClick={removeItemFromBasket} className='button mt-auto'>Remove from basket</button>
+                <button onClick={addItemToBasket} className='button mt-auto font-semibold'>Add to basket</button>
+                <button onClick={removeItemFromBasket} className='button mt-auto font-semibold'>Remove from basket</button>
             </div>
         </div> 
     );

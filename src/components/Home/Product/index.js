@@ -77,7 +77,7 @@ const Product = ({
           <Currency quantity={price} currency='GBP' />
         </div>
         <div className='flex justify-center mt-5 w-[100%]'>
-          <button onClick={() => addItemToBasket()} className='w-[100%] button'>Add to basket</button>
+          <button onClick={() => addItemToBasket()} className='w-[100%] button font-semibold'>Add to basket</button>
         </div>
       </div>
     </div>
