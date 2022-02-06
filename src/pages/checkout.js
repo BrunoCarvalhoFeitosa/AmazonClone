@@ -13,8 +13,6 @@ import Footer from '../components/common/Footer';
 
 const stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY}`);
 
-console.log('stripePromise', stripePromise);
-
 const Checkout = () => {
   const { data: session } = useSession();
   const items = useSelector(selectItems);
