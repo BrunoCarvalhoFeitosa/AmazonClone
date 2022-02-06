@@ -41,8 +41,7 @@ const ProductsInList = ({
                     src={image}
                     alt={title}
                     title={title}
-                    width={200}
-                    height={200}
+                    className='w-[200px] h-[200px] object-contain'
                 />
             </div>
             <div className='col-span-3 mx-5'>
@@ -57,7 +56,7 @@ const ProductsInList = ({
                       height={25}
                       title='FREE to delivery'
                       alt='Amazon Prime'
-                      className='cursor-pointer'
+                      className='cursor-pointer object-contain'
                     />
                 </div>
                 <div className='flex items-center'>

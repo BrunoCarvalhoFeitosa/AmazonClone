@@ -1,12 +1,18 @@
-import firebase from "firebase/app";
+import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA-fDSJAxA31kMIT4dzPAqNWf6GHTgbz5Y",
-  authDomain: "store-340404.firebaseapp.com",
-  projectId: "amazon-store-340404",
-  storageBucket: "amazon-store-340404.appspot.com",
-  messagingSenderId: "770728031367",
-  appId: "1:770728031367:web:31d01f98c2affba4dfb422"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID
 };
 
-firebase.initializeApp(firebaseConfig);
+const app = !firebase.apps.length
+   ? firebase.initializeApp(firebaseConfig)
+   : firebase.app();
+
+const db = app.firestore();
+
+export default db;

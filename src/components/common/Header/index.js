@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useSelector } from 'react-redux';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { selectItems } from '../../../slices/basketSlice';
@@ -13,6 +14,7 @@ import {
 const Header = () => {
   const { data: session } = useSession();
   const items = useSelector(selectItems);
+  const router = useRouter();
 
   return (
     <header>
@@ -55,7 +57,7 @@ const Header = () => {
             </p>
             <strong className='text-[13px] md:text-[15px] font-extrabold cursor-pointer'>Account & Lists</strong>
           </div>
-          <div className='flex flex-col mr-5 text-center'>
+          <div onClick={() => router.push('/orders')} className='flex flex-col mr-5 text-center'>
             <p className='text-[11px] md:text-[14px] h-[15px] cursor-pointer'>Returns</p>
             <strong className='text-[13px] md:text-[15px] font-extrabold cursor-pointer'>& Orders</strong>
           </div>
@@ -77,34 +79,34 @@ const Header = () => {
               <Link href="/"><MenuIcon className='h-5 mr-1' /></Link>
               <Link href="/"><p>All</p></Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Best sellers</Link>
           </li>
-          <li className='mr-6 cursor-pointer'>
+          <li className='mr-6 hover:underline cursor-pointer'>
             <Link href="/">Prime</Link>
           </li>
-          <li className='mr-6 cursor-pointer'>
+          <li className='mr-6 hover:underline cursor-pointer'>
             <Link href="/">Clothes</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Sports</Link>
           </li>
-          <li className='mr-6 cursor-pointer'>
+          <li className='mr-6 hover:underline cursor-pointer'>
             <Link href="/">Home & Kitchen</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Eletronics</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Smart Home</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Toys & Games</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Books</Link>
           </li>
-          <li className='hidden md:inline mr-6 cursor-pointer'>
+          <li className='hidden md:inline mr-6 hover:underline cursor-pointer'>
             <Link href="/">Music</Link>
           </li>
         </ul>

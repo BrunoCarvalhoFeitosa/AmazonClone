@@ -43,40 +43,42 @@ const Product = ({
         <img
           src={image}
           loading='lazy'
-          className='w-[150px]'
+          className='w-[150px] h-[150px] object-contain'
         />
       </div>
-      <div className='my-3'>
-        <h3 className='text-w[14px] italic line-clamp-1'>{title}</h3>
-      </div>
-      <div>
-        <div className='flex items-center'>
-          <img 
-            loading='lazy'
-            src='/amazon-icon-thin.png'
-            width={25}
-            height={25}
-            title='FREE to delivery'
-            alt='Amazon Prime'
-            className='cursor-pointer'
-          />
+      <div className='box-border'>
+        <div className='my-3'>
+          <h3 className='text-w[14px] italic line-clamp-1'>{title}</h3>
         </div>
-      </div>
-      <div className='flex items-center'>
-        {Array(rating).fill().map((_, index) => (
-          <div key={index}>
-            <StarIcon className='h-5 text-yellow-500' />
+        <div>
+          <div className='flex items-center'>
+            <img 
+              loading='lazy'
+              src='/amazon-icon-thin.png'
+              width={25}
+              height={25}
+              title='FREE to delivery'
+              alt='Amazon Prime'
+              className='cursor-pointer'
+            />
           </div>
-        ))}
-      </div>
-      <div className='my-2'>
-        <p className='text-[14px] line-clamp-2'>{description}</p>
-      </div>
-      <div className='mb-3 text-[22px] font-extrabold'>
-        <Currency quantity={price} currency='GBP' />
-      </div>
-      <div className='flex justify-center mt-5 w-[100%]'>
-        <button onClick={() => addItemToBasket()} className='w-[100%] button'>Add to basket</button>
+        </div>
+        <div className='flex items-center'>
+          {Array(rating).fill().map((_, index) => (
+            <div key={index}>
+              <StarIcon className='h-5 text-yellow-500' />
+            </div>
+          ))}
+        </div>
+        <div className='my-2'>
+          <p className='text-[14px] line-clamp-2'>{description}</p>
+        </div>
+        <div className='mb-3 text-[22px] font-extrabold'>
+          <Currency quantity={price} currency='GBP' />
+        </div>
+        <div className='flex justify-center mt-5 w-[100%]'>
+          <button onClick={() => addItemToBasket()} className='w-[100%] button'>Add to basket</button>
+        </div>
       </div>
     </div>
   );
