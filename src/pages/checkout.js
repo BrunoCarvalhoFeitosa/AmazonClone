@@ -7,9 +7,9 @@ import { useSession } from 'next-auth/react';
 import { loadStripe } from '@stripe/stripe-js';
 import Currency from 'react-currency-formatter';
 import axios from 'axios';
-import Header from '../components/common/Header';
+import Header from '../components/Common/Header';
 import ProductsInList from '../components/Checkout/ProducsIntList';
-import Footer from '../components/common/Footer';
+import Footer from '../components/Common/Footer';
 
 const stripePromise = loadStripe(`${process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY}`);
 

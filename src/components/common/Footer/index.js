@@ -32,47 +32,47 @@ const Footer = () => {
           <button onClick={handleScrollTop} className='w-[100%] py-4 bg-blue_medium text-white cursor-pointer hover:opacity-90 focus:border-0 focus:outline-none'>Back to top</button>
         </div>
         <div className='bg-blue_light py-10'>
-          <div className='grid grid-flow-row-dense md:grid-cols-3 mx-auto'>
+          <div className='grid grid-flow-row-dense md:grid-cols-3 w-[76%] mx-auto'>
             <div className='mb-10 md:mb-0'>
-              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Asimet dolor ipsum</h4>
+              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Most searched categories</h4>
               <ul className='text-center'>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Clothes to men</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Clothes to women</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Clothes to kids</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Clothes to sports</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Furniture</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Eletronics</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Smart Home</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Home & Kitchen</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Toy & Games</li>
               </ul>
             </div>
             <div className='mb-10 md:mb-0'>
-              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Asimet dolor ipsum</h4>
+              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Institutional guides</h4>
               <ul className='text-center'>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Account access</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Orders access</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Login access</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Register access</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Institutional</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Delivery</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Privacy policy</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Terms and conditions</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Our stores</li>
               </ul>
             </div>
             <div>
-              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Asimet dolor ipsum</h4>
+              <h4 className='mb-2 text-[20px] font-bold text-center text-white'>Attendance and support</h4>
               <ul className='text-center'>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
-                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lorem ipsum dolor asimet</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Common questions</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Chat online</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Send a mensagem</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Buy by phone</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Track order</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Pickup in store</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Payment reversal</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Defective product</li>
+                <li className='text-[14px] text-gray-300 mb-[6px] hover:underline cursor-pointer'>Lost delivery</li>
               </ul>
             </div>
           </div>

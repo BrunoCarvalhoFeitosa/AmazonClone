@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from "next/head";
 import { getSession } from 'next-auth/react';
-import Header from '../components/common/Header';
+import Header from '../components/Common/Header';
 import Banner from '../components/Home/Banner';
 import ProductShelf from '../components/Home/ProductShelf';
-import Footer from '../components/common/Footer';
+import Footer from '../components/Common/Footer';
 
 const Home = ({ products }) => {
   return (

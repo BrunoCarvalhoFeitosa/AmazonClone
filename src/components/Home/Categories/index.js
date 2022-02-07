@@ -7,7 +7,7 @@ const Categories = () => {
           <div className='overflow-hidden'>
             <img src="/home-categorie-clothes.jpg" className='mx-auto object-contain transform transition duration-250 hover:scale-[1.1]'/>
           </div>
-          <div className='w-[100%] mt-2 bg-gray-500'>
+          <div className='w-[100%] mt-2'>
             <h4 className='text-center italic font-semibold'>All of Clothes</h4>
           </div>
         </div>
@@ -15,7 +15,7 @@ const Categories = () => {
           <div className='overflow-hidden'>
             <img src="/home-categorie-tech.jpg" className='mx-auto object-contain transform transition duration-250 hover:scale-[1.1]' />
           </div>
-          <div className='w-[100%] mt-2 bg-gray-500'>
+          <div className='w-[100%] mt-2'>
             <h4 className='text-center italic font-semibold'>All of Technologie</h4>
           </div>
         </div>
@@ -23,7 +23,7 @@ const Categories = () => {
           <div className='overflow-hidden'>
             <img src="/home-categorie-health.jpg" className='mx-auto object-contain transform transition duration-250 hover:scale-[1.1]'/>
           </div>
-          <div className='w-[100%] mt-2 bg-gray-500'>
+          <div className='w-[100%] mt-2'>
             <h4 className='text-center italic font-semibold'>All of Health</h4>
           </div>
         </div>
@@ -31,7 +31,7 @@ const Categories = () => {
           <div className='overflow-hidden'>
             <img src="/home-categorie-pets.jpg" className='mx-auto object-contain transform transition duration-250 hover:scale-[1.1]' />
           </div>
-          <div className='w-[100%] mt-2 bg-gray-500'>
+          <div className='w-[100%] mt-2'>
             <h4 className='text-center italic font-semibold'>All of Pets</h4>
           </div>
         </div>
