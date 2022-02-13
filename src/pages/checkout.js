@@ -7,7 +7,7 @@ import { useSession } from 'next-auth/react';
 import { loadStripe } from '@stripe/stripe-js';
 import Currency from 'react-currency-formatter';
 import axios from 'axios';
-import Header from '../components/Common/Header';
+import Header from '../components/common/Header';
 import ProductsInList from '../components/Checkout/ProducsIntList';
 import Footer from '../components/Common/Footer';
 
