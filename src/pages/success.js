@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Header from '../components/common/Header';
-import Footer from '../components/Common/Footer';
+import Footer from '../components/common/Footer';
 import { CheckCircleIcon } from '@heroicons/react/solid';
 
 const Success = () => {

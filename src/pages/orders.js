@@ -4,7 +4,7 @@ import { getSession, useSession } from 'next-auth/react';
 import moment from 'moment';
 import db from '../../firebase';
 import Header from '../components/common/Header';
-import Footer from '../components/Common/Footer';
+import Footer from '../components/common/Footer';
 import Order from '../components/Orders/Order';
 
 const Orders = ({ orders }) => {

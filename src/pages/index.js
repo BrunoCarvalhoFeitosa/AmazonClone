@@ -4,7 +4,7 @@ import { getSession } from 'next-auth/react';
 import Header from '../components/common/Header';
 import Banner from '../components/Home/Banner';
 import ProductShelf from '../components/Home/ProductShelf';
-import Footer from '../components/Common/Footer';
+import Footer from '../components/common/Footer';
 
 const Home = ({ products }) => {
   return (
