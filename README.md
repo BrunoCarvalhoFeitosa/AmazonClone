@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/BrunoCarvalhoFeitosa/BeTheHero">
+  <a href="https://github.com/BrunoCarvalhoFeitosa/AmazonClone">
     <img src="/public/amazon-icon-bigger.png" width="200" height="200" alt="Logo" />
   </a>
 
